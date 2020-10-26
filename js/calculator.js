@@ -12,7 +12,7 @@ function operatorPressed(ev) {
     const btn = ev.target;
     const display = document.querySelector('.display');
     let lastChar = display.value.charAt(display.value.length - 1);
-    lastChar = parseInt(lastChart,10);
+    lastChar = parseInt(lastChar,10);
     if (btn.innerText != display.value.charAt(display.value.length - 1) && Number.isNaN(lastChar) === true) {
         display.value = display.value.replace(/.$/, btn.innerText);
     }
